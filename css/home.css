@@ -4,6 +4,14 @@
   margin: 0;
 }
 
+header{
+  background-color: #ff4d4d;
+}
+
+body{
+  background-color: #fffde7;
+}
+
 .photo-perfil{
   border-radius: 50PX;
 }
