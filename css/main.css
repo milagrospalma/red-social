@@ -1,1 +1,39 @@
-
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  background-image: url(../assets/images/juntas.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 70vh;
+}
+/*SECCIÓN DE REGISTRO E INGRESO (HERO)*/
+.img-hero{
+  background-image: url(../assets/images/amigas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.container-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.container-flex-vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.red{
+  background: #ff4d4d;
+}
+.white{
+  background: #ffff;
+  color: #ff4d4d;
+}
