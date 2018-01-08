@@ -4,17 +4,21 @@
   margin: 0;
 }
 
-.container-header,.registro, .button-guardar{
+.container-header,.login, .div-ir{
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center; 
 }
 
-section, footer{
-  color: #ff8a80 ;
+.registro input{
+  color: #ff4d4d;
 }
 
-.button{
- background: #ff8a80 ;
+.button-ir{
+  background-color: #ff4d4d;
+}
+
+section, footer{
+  color: white;
 }
