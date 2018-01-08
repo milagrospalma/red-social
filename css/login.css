@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-header,.login, .div-ir{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center; 
+}
+
+.registro input{
+  color: #ff4d4d;
+}
+
+.button-ir{
+  background-color: #ff4d4d;
+}
+
+section, footer{
+  color: white;
+}
