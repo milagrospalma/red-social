@@ -4,6 +4,17 @@
   margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+header{
+  background-color: #ff4d4d;
+}
+
+body{
+  background-color: #fffde7;
+}
+
+>>>>>>> 788d054db3352f6c864b03441c91d4a332350484
 .photo-perfil{
   border-radius: 50PX;
 }
