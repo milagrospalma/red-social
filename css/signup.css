@@ -8,12 +8,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  align-content: center; 
 }
 
 section, footer{
   color: #ff8a80 ;
 }
 .button{
-  background: #ff8a80 ;
+ background: #ff8a80 ;
 }
