@@ -1,0 +1,36 @@
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+nav{
+  background:#ffffff;
+  color: #000000;
+}
+.photo-perfil{
+  border-radius: 50px;
+}
+.btn-follow{
+  text-align: right;
+}
+.follow{
+  background: #ff4d4d;
+  text-align: center;
+}
+.frase{
+  line-height: 20px;
+}
+.container-flex-vertical{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.nickName{
+  text-align: center;
+  font-size: 25px;
+}
+main{
+  background-image: url(../assets/images/background.png);
+  height: 50vh;
+}

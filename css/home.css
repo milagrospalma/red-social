@@ -4,6 +4,7 @@
   margin: 0;
 }
 
+<<<<<<< HEAD
 header{
   background-color: #ff4d4d;
 }
@@ -12,6 +13,8 @@ body{
   background-color: #fffde7;
 }
 
+=======
+>>>>>>> 0f98c458e8ac5f58e4663ab1b8effcc6b86e6f86
 .photo-perfil{
   border-radius: 50PX;
 }
