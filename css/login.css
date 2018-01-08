@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center; 
+  align-content: center;
 }
 
 .registro input{
@@ -20,5 +20,5 @@
 }
 
 section, footer{
-  color: white;
+  color: #ff8a80;
 }
