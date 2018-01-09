@@ -5,22 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
     <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../css/home.css">
   </head>
   <body>
     <!-- estructura de la sección 'header' -->
     <header>
-      <div class="container">
+      <div class="container ">
         <div class="row col s12">
-          <h4 class="col s8">Nick Name</h4>
-          <div class="div-img col s4">
+          <ul class="left hide-on-small-only">
+            <li><a href="#portada">Portada</a></li>
+            <li><a href="#">Historias/blogs</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Eventos</a></li>
+          </ul>
+          <!-- Dropdown Trigger -->
+          <a class="button-dehaze dropdown-button btn hide-on-med-and-up" href="#" data-activates='dropdown1'><i class="material-icons">dehaze</i></a>
+          <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content left'>
+            <li><a href="#portada">Portada</a></li>
+            <li><a href="#!">historias/blogs</a></li>
+            <li><a href="#!">videos</a></li>
+            <li><a href="#!">eventos</a></li>
+          </ul>
+          <div class="div-img right">
             <img class="photo-perfil" src="../assets/images/rosa.jpg" alt="">
-          </div>    
+            <p class="">Nick Name</p>
+          </div>              
         </div>
       </div>
     </header>
@@ -29,23 +41,71 @@
       <div class="container  div-frase section-wrapper">
         <div class="row col s12">
           <h3 class="col s12">"frase"</h3>
-          <h5 class="col s4 push-s9">autor</h5>
         </div>
       </div> 
     </section>
     <hr>
+    <br>
     <!-- estructura de la sección 'portada' -->
     <section>
       <div class="container">
         <div class="row">
+          <div class="title">
+            <a name="portada">Portada</a>
+            <span></span>
+          </div>
+          <br>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <a class=" btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+                <p class="col s10">Publicado por: <a>Rosa</a></p>
+              </div>
+              <br>
+              <div class="card-content">
+                <span class="card-title">"Time´s Up": qué hay detrás del anuncio de protesta en los Globos de Oro</span>
+                <p>Te contamos más sobre la iniciativa por la que casi la totalidad de los asistentes al evento acudieron vestidos de negro y con mensaje en la solapa</p>
+                <br>
+                <a href="https://elcomercio.pe/tvmas/hollywood/golden-globes-times-up-mensaje-asistentes-globos-oro-noticia-487160?foto=3" target="_blank">Enterate de más aquí!</a>
+              </div>
+            </div>
+            <div class="div-icons">
+              <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
+            </div>  
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+                <p class="col s12">Publicado por: <a>Luna_forever</a></p>
+              </div>
+              <br>
+              <div class="card-content">
+                <span class="card-title">"fui victima de violencia pero pude salir adelante"</span>
+                <p>Hola, queria compartir mi experiencia al ser victima de abusos físicos y psicologicos por parte de mi pareja; él Siempre me hacia sentir culpable de lo que pasaba, yo era la que le tenía que pedir perdón cuando me pegaba porque decía que me portaba mal y tenía que pegar. Los hijos lo sienten y viven en ese ambiente de violencia y después lo transmiten. Por eso es importante no aguantar por los hijos, sino al revés. Primero hay que hacerlo por una misma y después para que los hijos vivan en un ambiente de armonía e igualdad. El me dijo más de una vez que nunca me separaría de él. Me llamó chiquita y aseguró que lo nuestro es amor o muerte. Salí corriendo de su lado llorando y el destino quiso que yo viera un cartel que decía 'Rompamos el silencio' y al lado un teléfono. Esa noche de madrugada llamé y tuve la fuerza de salir de mi casa con mis hijos y empezar una nueva vida"..</p>
+              </div>
+            </div>
+            <div class="div-icons">
+              <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
+            </div>
+          </div>
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">  
-                <a class="btn-floating halfway-fab waves-effect waves-light skyblue"><i class="material-icons">add</i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+                <p class="col s12">Publicado por: <a>Rosa</a></p>
               </div>
+              <br>
               <div class="card-content">
-                <span class="card-title">Card Title</span>
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                <span class="card-title">Ya es hora!</span>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/fN5HV79_8B8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <p>Este video me conmovio mucho, porfa compartanlo!!!.</p>
               </div>
             </div>
             <div class="div-icons">
@@ -57,45 +117,13 @@
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
-                <img src="../assets/images/rosa.jpg">
-                <span class="card-title">Card Title</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+                <p class="col s12">Publicado por: <a>Luna_forever</a></p>
               </div>
+              <br>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-            <div class="div-icons">
-              <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
-              <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">  
-                <a class="btn-floating halfway-fab waves-effect waves-light skyblue"><i class="material-icons">add</i></a>
-              </div>
-              <div class="card-content">
-                <span class="card-title">Card Title</span>
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-            <div class="div-icons">
-              <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
-              <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="../assets/images/rosa.jpg">
-                <span class="card-title">Card Title</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                <span class="card-title">Vamos chicas!!</span>
+                <img class="responsive-img" src="../assets/images/encuentro-paz.jpg">
               </div>
             </div>
             <div class="div-icons">
@@ -108,10 +136,9 @@
       </div>
     </section>
     <!-- estructura de la sección 'historias/blogs' -->
-    <section>
+    <section class="portada">
       <div class="container">
         <div class="row">
-          
         </div>
       </div>
     </section>
@@ -119,7 +146,6 @@
     <section>
       <div class="container">
         <div class="row">
-                
         </div>
       </div>
     </section>
@@ -137,7 +163,17 @@
         </div>
       </div>
     </footer>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4XlA-FxuFEQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4XlA-FxuFEQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
     <!-- enlazando archivos js -->
     <script src="../vendors/js/jquery-3.2.1.min.js"></script>
     <script src="../vendors/materialize/js/materialize.min.js"></script>
