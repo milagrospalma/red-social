@@ -8,30 +8,19 @@ body{
   background-color: #fffde7;
 }
 
+section{
+  padding-top: 70px;
+}
+
 /* estilos para el header*/
 header{
-  position: fixed;
-  width: 100%;
-  height: 110px;
-  margin-top: 0;
-  z-index: 1000;
   display: flex;
   flex-direction: column;
-  padding: 20px 10px;
+  padding: 10px 10px;
   background-color: #ff4d4d;
 }
 
-header ul li{
-  display: inline-block;
-  line-height: 100px;
-  list-style: none;
-}
-
-.button-dehaze{
-  padding: 0 10px;
-}
-
-.div-img{
+.div-img, .div-frase{
   display: inline-block;
   color: white;
 }
@@ -42,33 +31,19 @@ header ul li{
   height: 60px;
 }
 
-/* estilos para la seccion 'frase'*/
-.div-frase{
-  padding-top: 120px;
-  color: #ff4d4d;
+/* estilos para la seccion 'nav'*/
+nav{
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  z-index: 1000;
+  background-color:transparent;
 }
 
-/*estilos para la seccion 'portada'*/
-.title{
-  padding: 30px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.div-anchor{
+  background-color: transparent;
 }
 
-.title a{
-  color:#009688 ;
-  font-size: 30px;
+.style-div{
+  background-color: white;
 }
-
-.title span{
-  padding: 0;
-  margin: 0;
-  background-color:#009688;
-  width: 50px;
-  height: 5px;
-  border-radius: 3px;
-}
-
-

@@ -9,56 +9,38 @@
     <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../css/home.css">
   </head>
-  <body>
+  <body>     
     <!-- estructura de la sección 'header' -->
     <header>
       <div class="container ">
         <div class="row col s12">
-          <ul class="left hide-on-small-only">
-            <li><a href="#portada">Portada</a></li>
-            <li><a href="#">Historias/blogs</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Eventos</a></li>
-          </ul>
-          <!-- Dropdown Trigger -->
-          <a class="button-dehaze dropdown-button btn hide-on-med-and-up" href="#" data-activates='dropdown1'><i class="material-icons">dehaze</i></a>
-          <!-- Dropdown Structure -->
-          <ul id='dropdown1' class='dropdown-content left'>
-            <li><a href="#portada">Portada</a></li>
-            <li><a href="#!">historias/blogs</a></li>
-            <li><a href="#!">videos</a></li>
-            <li><a href="#!">eventos</a></li>
-          </ul>
+          <div class=" div-frase left">
+            <h3>"frase"</h3>
+          </div>          
           <div class="div-img right">
             <img class="photo-perfil" src="../assets/images/rosa.jpg" alt="">
             <p class="">Nick Name</p>
-          </div>              
-        </div>
+          </div>
+        </div>   
       </div>
     </header>
-    <!-- estructura de la sección 'frase' -->
-    <section>
-      <div class="container  div-frase section-wrapper">
-        <div class="row col s12">
-          <h3 class="col s12">"frase"</h3>
-        </div>
-      </div> 
-    </section>
-    <hr>
+    <!-- estructura de la sección 'nav' -->
+    <nav class="col s6">
+      <ul id="tabs-swipe-demo  " class="tabs">
+        <li class="tab col s3"><a href="#test-swipe-1">Portada</a></li>
+        <li class="tab col s3"><a href="#test-swipe-2">Videos</a></li>
+        <li class="tab col s3"><a href="#test-swipe-3">Eventos</a></li>    
+      </ul>    
+    </nav>  
     <br>
     <!-- estructura de la sección 'portada' -->
-    <section>
+    <section id="test-swipe-1" class="col s12">
       <div class="container">
-        <div class="row">
-          <div class="title">
-            <a name="portada">Portada</a>
-            <span></span>
-          </div>
-          <br>
+        <div class="row">      
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
-                <a class=" btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+                <a class=" btn-floating halfway-fab waves-effect waves-light add"><i class="material-icons">add</i></a>
                 <p class="col s10">Publicado por: <a>Rosa</a></p>
               </div>
               <br>
@@ -69,11 +51,13 @@
                 <a href="https://elcomercio.pe/tvmas/hollywood/golden-globes-times-up-mensaje-asistentes-globos-oro-noticia-487160?foto=3" target="_blank">Enterate de más aquí!</a>
               </div>
             </div>
-            <div class="div-icons">
-              <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
-              <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
-            </div>  
+            <div class="div-icons style-div">
+              <a class="btn-floating  waves-effect waves-light red comment"><i class="material-icons">favorite_border</i></a>
+              <a class="btn-floating  waves-effect waves-light green comment"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light yellow comment"><i class="material-icons">star_border</i></a>
+            </div>
+            <div class="div-input">
+            </div>
           </div>
           <div class="col s12 m6">
             <div class="card">
@@ -96,7 +80,7 @@
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">  
-                <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light add"><i class="material-icons">add</i></a>
                 <p class="col s12">Publicado por: <a>Rosa</a></p>
               </div>
               <br>
@@ -117,7 +101,7 @@
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
-                <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light add"><i class="material-icons">add</i></a>
                 <p class="col s12">Publicado por: <a>Luna_forever</a></p>
               </div>
               <br>
@@ -135,48 +119,62 @@
         </div>
       </div>
     </section>
-    <!-- estructura de la sección 'historias/blogs' -->
-    <section class="portada">
-      <div class="container">
-        <div class="row">
-        </div>
-      </div>
-    </section>
     <!-- estructura de la sección 'videos' -->
-    <section>
+    <section id="test-swipe-2" class="col s12">
       <div class="container">
         <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">  
+                <a class="btn-floating halfway-fab waves-effect waves-light add"><i class="material-icons">add</i></a>
+                <p class="col s12">Publicado por: <a>Rosa</a></p>
+              </div>
+              <br>
+              <div class="card-content">
+                <span class="card-title">Ya es hora!</span>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/fN5HV79_8B8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <p>Este video me conmovio mucho, porfa compartanlo!!!.</p>
+              </div>
+            </div>
+            <div class="div-icons">
+              <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- estructura de la sección 'eventos/talleres' -->
-    <section>
+    <section id="test-swipe-3" class="col s12">
       <div class="container">
-        <div class="row">            
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <a class="btn-floating halfway-fab waves-effect waves-light add"><i class="material-icons">add</i></a>
+                <p class="col s12">Publicado por: <a>Luna_forever</a></p>
+              </div>
+              <br>
+              <div class="card-content">
+                <span class="card-title">Vamos chicas!!</span>
+                <img class="responsive-img" src="../assets/images/encuentro-paz.jpg">
+              </div>
+            </div>
+            <div class="div-icons">
+              <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- estructura de la sección 'footer' -->
-    <footer>
-      <div class="container">
-        <div class="row">          
-        </div>
-      </div>
-    </footer>
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
-    </div>
-    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4XlA-FxuFEQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
     <!-- enlazando archivos js -->
     <script src="../vendors/js/jquery-3.2.1.min.js"></script>
     <script src="../vendors/materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../js/registro.js"></script>
+    <script type="text/javascript" src="../js/home.js"></script>
   </body>
 </html>
