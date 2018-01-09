@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center; 
+  align-content: center;
 }
 
 section, footer{
@@ -17,4 +17,7 @@ section, footer{
 
 .button{
  background: #ff8a80 ;
+}
+.phrase-style{
+  color: #ff8a80 ;
 }
