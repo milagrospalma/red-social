@@ -36,10 +36,27 @@
     <main>
       <section>
         <ul id="tabs-swipe-demo" class="tabs">
-        <li class="tab col s3"><a href="#test-swipe-1"><strong>Publicaciones</strong></a></li>
-        <li class="tab col s3"><a class="active" href="#test-swipe-2">Seguidores</a></li>
+          <li class="tab col s3"><a href="#test-swipe-1"><strong>Publicaciones</strong></a></li>
+          <li class="tab col s3"><a class="active" href="#test-swipe-2">Seguidores</a></li>
         </ul>
-        <div id="test-swipe-1" class="col s12" id="post">Publicaciones</div>
+        <!---AREA PUBLICACIONES-->
+        <div id="test-swipe-1" class="col s12" id="post">
+          <div class="posting">
+            <textarea type="text" name="insert-links" id="insert-text" placeholder="Comparte experiencias,historias,pensamientos..."></textarea>
+            <hr><!---separación entre texto y botón-->
+            <!---CREANDO BOTON PARA PUBLICAR-->
+            <div class="button-characters">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Publicar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+          <!---CREANDO CONTENEDOR DE TODAS LAS PUBLICACIONES DEL USUARIO-->
+          <div id="div-posts">
+            
+          </div>
+        </div>
+        <!---AREA SEGUIDORES-->
         <div id="test-swipe-2" class="col s12" id="followera">Seguidores</div>
       </section>
     </main>
