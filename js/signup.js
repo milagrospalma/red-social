@@ -4,10 +4,6 @@ $(document).ready(function() {
   var $password = $('#password');
   var $btnFrase = $('#btn-frase');
   var $btnRegistro = $('.button-registro');
-  // CREANDO FUNCION QUE GUARDA DATOS EN EL NAVEGADOR
-  $btnRegistro.on('click', function() {
-    localStorage.setItem('nick-name', $nickName.val());
-  });
   // CREANDO FUNCION QUE VALIDA LOS DATOS DEL IMPUT PASSWORD
   $password.on('input', function() {
     if ($password .val().length >= 6) {
@@ -28,4 +24,12 @@ $(document).ready(function() {
     $btnFrase.off('click');
     $btnRegistro.attr('disabled', false);
   });
+  // CREANDO FUNCION QUE GUARDA DATOS EN EL NAVEGADOR
+  $btnFrase.on('click', function() {
+    localStorage.setItem('img-frase', $imagePhrase.val());
+  });
+  $btnRegistro.on('click', function() {
+    localStorage.setItem('nick-name', $nickName.val());
+  });
+  
 });

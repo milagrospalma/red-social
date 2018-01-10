@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  // obteniendo datos para agregar al header 
+  var $nickName = localStorage.getItem('nick-name');
+  $('div.div-img>p').append($nickName);
+  // var $frase = localStorage.getItem('img-frase');
+  // $frase.attr('class', 'frase');
+  // $('.div-frase').append($frase);
+
   // funcionalidad para el modal 'comentar'
   var $iconComment = $('.icon-comment');
   // evento para el icono 'comment'
@@ -14,10 +21,10 @@ $(document).ready(function() {
         $('.button-modal').attr('disabled', 'disabled');
       }
     });
-    // funcionalidad para el button del modal
+    // funcionalidad para el button y icon del modal
     $('.button-modal').on('click', function() {
       var $inputValue = $('div.add-comment>input').val();
-      $('.comments').append('<p class="color-p">' + $inputValue + '</p>' + '<br>');
+      $('.comments').append('<span class="color-span">' + $nickName + ':' + ' </span>' + '<p class="color-p">' + $inputValue + '</p>' + '<br>');
     });
     $('.icon-close').on('click', function() {
       $('.section-modal').attr('hidden', 'hidden');
@@ -32,25 +39,57 @@ $(document).ready(function() {
     $('.icon-close').on('click', function() {
       $('.section-modal2').attr('hidden', 'hidden');
     });
-    
+    // evento para los iconos del modal
     $('.icon-input-text').on('mouseover', function() {
       $('.input-text').removeAttr('hidden');
       $('.input-field').attr('hidden', 'hidden');
-      var $inputText = $('div.input-text>input');
-
+      var $inputText = $('.add-text');
+      var $inputLink = $('.add-link');
+      var $inputTitle = $('.add-title');
+      var $inputVideo = $('.add-video')
+      // evento para los inputs del modal
       $inputText.on('keyup', function(event) {
         var $inputTextValue = $inputText.val();
         $('.button-modal').removeAttr('disabled');  
         if ($inputTextValue === '' || event.keyCode === 69 && $inputTextValue.lenght <= 1) {
           $('.button-modal').attr('disabled', 'disabled');
         }
-        $('.button-modal').on('click', function() {
-          $('#test-swipe-1').append('<p>'+ $inputTextValue +'</p>');
-        });
-
+      });
+      $inputLink.on('click', function() {
+        var $inputLinkValue = $inputLink.val();
+        $('.button-modal').removeAttr('disabled');  
+      });
+      $inputTitle.on('keyup', function(event) {
+        var $inputTitleValue = $inputTitle.val();
+        $('.button-modal').removeAttr('disabled');  
+        if ($inputTitleValue === '' || event.keyCode === 69 && $inputTitleValue.lenght <= 1) {
+          $('.button-modal').attr('disabled', 'disabled');
+        }
+      });
+      $inputVideo.on('click', function() {
+        var $inputVideoValue = $inputVideo.val();
+        $('.button-modal').removeAttr('disabled');  
+      });
+      // evento del button del modal: agregando elementos al html
+      $('.button-modal').on('click', function() {
+        var $new = $('.new');
+        $('.row-news').append($new);
+        $('p>a.nick-name').append($nickName);
+        var $inputTextValue = $inputText.val();
+        $('div.card-content>p.text').empty();
+        $('div.card-content>p.text').append($inputTextValue);
+        var $inputLinkValue = $inputLink.val();
+        $('div.card-content>a.link').removeAttr('href');
+        $('div.card-content>a.link').attr('href', $inputLinkValue);
+        var $inputTitleValue = $inputTitle.val();
+        $('div.card-content>span.title').empty();
+        $('div.card-content>span.title').append($inputTitleValue);
+        var $inputVideoValue = $inputVideo.val();
+        $('div.video>iframe').removeAttr('src');
+        $('div.video>iframe').attr('src', $inputVideoValue);
+        $('.section-modal2').attr('hidden', 'hidden');
       });
     });
-
     $('.icon-input-file').on('mouseover', function() {
       $('.input-field').removeAttr('hidden');
       $('.input-text').attr('hidden', 'hidden');
