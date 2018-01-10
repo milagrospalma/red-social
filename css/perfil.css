@@ -32,5 +32,13 @@ nav{
 }
 main{
   background-image: url(../assets/images/background.png);
-  height: 100vh;
+  height: 100%;
+}
+.container-posts{
+  width: 100%;
+  height: auto;
+  background:#ff4d4d;
+  opacity: 0.8;
+  margin-bottom: 5px;
+  padding: 10px;
 }

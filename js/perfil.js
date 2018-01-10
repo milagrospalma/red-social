@@ -6,10 +6,10 @@ $(document).ready(function() {
   $textarea.on('input', function() {
     $textarea.val();
   });
-  //  agregando evento al boton para guardar las publicaciones en un contene
+  //  agregando evento al boton para guardar las publicaciones en un contenedor
   $btnPosting.on('click', function() {
     //  agregando hora de publicación
-    $divContainerPosts .append($textarea.val());
-    $divContainerPosts .append(moment().format('LLLL'));
+    $divContainerPosts .append('<div class="container-posts">' + $textarea.val() + moment().format('LLLL') + '</div>');
+    $divContainerPosts .append();
   });
 });
