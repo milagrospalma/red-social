@@ -25,9 +25,9 @@ $(document).ready(function() {
     $btnRegistro.attr('disabled', false);
   });
   // CREANDO FUNCION QUE GUARDA DATOS EN EL NAVEGADOR
-  $btnFrase.on('click', function() {
-    localStorage.setItem('img-frase', $imagePhrase.val());
-  });
+  // $btnFrase.on('click', function() {
+  //   localStorage.setItem('img-frase', $imagePhrase.val());
+  // });
   $btnRegistro.on('click', function() {
     localStorage.setItem('nick-name', $nickName.val());
   });
