@@ -49,5 +49,6 @@ como resultado a esta encuesta los datos fueron los siguientes:
 - Paint
 
 ### Producto Final
- Vistas
+
+
 ![Responsive-Desktop](assets/images/screen1.png)
