@@ -17,9 +17,10 @@ $(document).ready(function() {
     var min = 1;
     var max = 5;
     var aleatorio = Math.floor(Math.random() * (max - (min - 1))) + min;
-    var imagePhrase = $('<img src=" + frases[aleatorio]+">');
-    imagePhrase.addClass('phrase-style');
+    var imagePhrase = '<img src="../assets/images/frase' + aleatorio + '.png' + '">';
     var phraseContainer = $('.frase'); // div que contiene el botón de frase y almacenará el img-frase
     phraseContainer.append(imagePhrase);
+    $btnFrase.off('click');
+    $btnRegistro.attr('disabled', false);
   });
 });

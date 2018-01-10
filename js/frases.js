@@ -1,4 +1,4 @@
-var frases = [
+var frasesData = [
   '<img src="../assets/images/frase1.png" alt="1">',
   '<img src="../assets/images/frase2.png" alt="2">',
   '<img src="../assets/images/frase3.png" alt="3">',
