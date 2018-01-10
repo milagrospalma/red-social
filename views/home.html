@@ -46,9 +46,9 @@
                 <br>
                 <div class="card-content">
                   <span class="title"></span>
-                  <img class="responsive-img img" src="../assets/images/"hidden>
-                  <div class="video-container video" hidden>
-                    <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <img class="responsive-img img" src="">
+                  <div class="video-container video">
+                    <iframe width="560" height="315" src="" frameborder="0" allow="autoplay encrypted-media" allowfullscreen></iframe>
                   </div>
                   <p class="text"></p>
                   <br>
@@ -235,17 +235,22 @@
             <div class="add">
               <form action="#">
                 <div class="titulo">
+                  <label for="">Agregar titulo</label>
                   <input class="add-title" type="text" placeholder="agregar titulo">
                 </div>
                 <div class="input-text" hidden>
+                  <label for="">Agregar texto</label>
                   <input class="add-text" type="text" placeholder="agregar texto">
+                  <label for="">Agregar link</label>
                   <input class="add-link" type="text" placeholder="agregar url">
+                  <label for="">Agregar video</label>
                   <input class="add-video" type="text" placeholder="agregar url">
                 </div>
                 <div class="file-field input-field" hidden>
                   <input type="file" multiple>
                   <div class="file-path-wrapper">
-                    <input class="file-path validate add-archivo" type="text" placeholder="agregar archivo">
+                    <label for="">Agregar imagen</label>
+                    <input class="file-path validate add-img" type="text" placeholder="agregar imagen">
                   </div>
                 </div>
               </form>
@@ -260,6 +265,7 @@
     <!-- enlazando archivos js -->
     <script src="../vendors/js/jquery-3.2.1.min.js"></script>
     <script src="../vendors/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/moment.js"></script>    
     <script type="text/javascript" src="../js/home.js"></script>
   </body>
 </html>
