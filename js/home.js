@@ -140,8 +140,4 @@ $(document).ready(function() {
       });
     });
   });
-<<<<<<< HEAD
- });
-=======
 });
->>>>>>> maythe
