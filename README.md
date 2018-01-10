@@ -28,7 +28,7 @@ como resultado a esta encuesta los datos fueron los siguientes:
 
 ### Brainstorming
  Después de analizar las respuetas de nuestras encuestadas realizamos una mapa de ideas con las posibles herramientas o funcionalidades que usaríamos en nuestra red social :
- ![Responsive-Desktop](assets/images/ideas.png)
+ ![Responsive-Desktop](assets/images/ideas.jpg)
 
 ### Herramientas tecnológicas utilizadas
  Una vez definidas las ideas a realizar, empezamos con el preceso de codificar nuestro proyecto y para ellos utilizamos las siguiente herramientas :
@@ -49,4 +49,4 @@ como resultado a esta encuesta los datos fueron los siguientes:
 
 ### Producto Final
  Vistas
-![Responsive-Desktop](assets/img/screens.png)
+![Responsive-Desktop](assets/img/screen1.png)
