@@ -36,7 +36,31 @@
     <!-- estructura de la sección 'portada' -->
     <section id="test-swipe-1" class="col s12">
       <div class="container">
-        <div class="row">      
+        <div class="row">
+            <div class="col s12 m6 ">
+              <div class="card">
+                <div class="card-image">
+                  <a class=" btn-floating halfway-fab waves-effect waves-light add"><i class="material-icons">add</i></a>
+                  <p class="col s10">Publicado por: <a class="nick-name"></a></p>
+                </div>
+                <br>
+                <div class="card-content">
+                  <span class="card-title"></span>
+                  <img class="responsive-img" src="../assets/images/"hidden>
+                  <div class="video-container" hidden>
+                    <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                  <p class="text"></p>
+                  <br>
+                  <a  class="link" href="" target="_blank">Enterate de más aquí!</a>
+                </div>
+              </div>
+              <div class="div-icons style-div">
+                <a class="btn-floating  waves-effect waves-light red "><i class="material-icons">favorite_border</i></a>
+                <a class="btn-floating  waves-effect waves-light green icon-comment"><i class="material-icons">comment</i></a>
+                <a class="btn-floating  waves-effect waves-light yellow "><i class="material-icons">star_border</i></a>
+              </div>
+            </div>      
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
@@ -52,11 +76,9 @@
               </div>
             </div>
             <div class="div-icons style-div">
-              <a class="btn-floating  waves-effect waves-light red comment"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green comment"><i class="material-icons">comment</i></a>
-              <a class="btn-floating  waves-effect waves-light yellow comment"><i class="material-icons">star_border</i></a>
-            </div>
-            <div class="div-input">
+              <a class="btn-floating  waves-effect waves-light red "><i class="material-icons">favorite_border</i></a>
+              <a class="btn-floating  waves-effect waves-light green icon-comment"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light yellow "><i class="material-icons">star_border</i></a>
             </div>
           </div>
           <div class="col s12 m6">
@@ -73,7 +95,7 @@
             </div>
             <div class="div-icons">
               <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light green icon-comment"><i class="material-icons">comment</i></a>
               <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
             </div>
           </div>
@@ -94,7 +116,7 @@
             </div>
             <div class="div-icons">
               <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light green icon-comment"><i class="material-icons">comment</i></a>
               <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
             </div>
           </div>
@@ -112,7 +134,7 @@
             </div>
             <div class="div-icons">
               <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light green icon-comment"><i class="material-icons">comment</i></a>
               <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
             </div>
           </div>   
@@ -140,7 +162,7 @@
             </div>
             <div class="div-icons">
               <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light green icon-comment"><i class="material-icons">comment</i></a>
               <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
             </div>
           </div>
@@ -165,9 +187,71 @@
             </div>
             <div class="div-icons">
               <a class="btn-floating  waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-              <a class="btn-floating  waves-effect waves-light green"><i class="material-icons">comment</i></a>
+              <a class="btn-floating  waves-effect waves-light green icon-comment"><i class="material-icons">comment</i></a>
               <a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons">star_border</i></a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- estructura de modal para comentar -->
+    <section class="section-modal" hidden>
+      <div class="container container-modal">
+        <div class="row row-modal">
+          <div class="header-modal ">
+            <span class="right icon-close"><i class="material-icons">close</i></span>
+            <h5>Comentarios</h5>
+          </div>
+          <br>
+          <div class="body-modal">
+            <div class="comments">
+            </div>
+            <div class="add-comment">
+              <input type="text" placeholder="Ingresar comentario">
+              <button class=" btn waves-effect waves-light button-modal" disabled>Comparte</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- estructura de modal para publicar -->
+    <section class="section-modal2" hidden>
+      <div class="container container-modal">
+        <div class="row row-modal">
+          <div class="header-modal ">
+            <span class="right icon-close"><i class="material-icons">close</i></span>
+            <h5>Publicaciones</h5>
+            <br>
+            <div class="icons-modal">
+              <ul>
+                <li class="col s3"><a class="btn-floating  waves-effect waves-light icon-input-text"><i class="material-icons">play_circle_filled</i></a></li>
+                <li class="col s3"><a class="btn-floating  waves-effect waves-light icon-input-text"><i class="material-icons">format_quote</i></a></li>
+                <li class="col s3"><a class="btn-floating waves-effect waves-light icon-input-file"><i class="material-icons">publish</i></a></li>
+                <li class="col s3"><a class="btn-floating  waves-effect waves-light icon-input-file"><i class="material-icons">attach_file</i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="body-modal">
+            <div class="add">
+              <form action="#">
+                <div class="titulo">
+                  <input type="text" placeholder="agregar titulo">
+                </div>
+                <div class="input-text" hidden>
+                  <input class="add" type="text" placeholder="agregar texto">
+                  <input class="add" type="text" placeholder="agregar url">
+                </div>
+                <div class="file-field input-field" hidden>
+                  <input type="file" multiple>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="agregar archivo">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-modal">              
+            <button class=" btn waves-effect waves-light button-modal pink" disabled>Publicar</button>
           </div>
         </div>
       </div>
