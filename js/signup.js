@@ -27,6 +27,6 @@ $(document).ready(function() {
   // CREANDO FUNCION QUE GUARDA DATOS EN EL NAVEGADOR
   $btnRegistro.on('click', function() {
     localStorage.setItem('nick-name', $nickName.val());
+    localStorage.setItem('password', $password.val());
   });
-  
 });
