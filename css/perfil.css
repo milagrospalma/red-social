@@ -38,7 +38,10 @@ main{
   width: 100%;
   height: auto;
   background:#ff4d4d;
-  opacity: 0.8;
-  margin-bottom: 5px;
   padding: 10px;
+}
+.time{
+  color: #ffff;
+  background:#40E0D0 ;
+  margin-bottom: 10px;
 }

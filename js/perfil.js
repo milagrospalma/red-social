@@ -9,7 +9,7 @@ $(document).ready(function() {
   //  agregando evento al boton para guardar las publicaciones en un contenedor
   $btnPosting.on('click', function() {
     //  agregando hora de publicación
-    $divContainerPosts .append('<div class="container-posts">' + $textarea.val() + moment().format('LLLL') + '</div>');
-    $divContainerPosts .append();
+    $divContainerPosts .append('<div class="container-posts">' + $textarea.val() + '</div>');
+    $divContainerPosts .append('<div class="time">' + moment().format('LLLL') + '</div>');
   });
 });
