@@ -62,17 +62,16 @@ header{
   background-color: transparent;
 }
 .card{
-  background: #ec5f5f;
+  background: #FA8072;
 }
 .link, .aqui, .usuare-posted{
   color: #ffff;
 }
+
 .icons{
   background: #800000;
 }
-.icon-add{
-  background:#000000;
-}
+
 /* estilos para modal */
 .container-modal{
   position:fixed;

@@ -30,5 +30,6 @@ $(document).ready(function() {
   // });
   $btnRegistro.on('click', function() {
     localStorage.setItem('nick-name', $nickName.val());
+    localStorage.setItem('password', $password.val());
   });
 });
