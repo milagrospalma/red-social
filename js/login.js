@@ -8,7 +8,7 @@ $(document).ready(function() {
   // CREANDO FUNCION QUE VALIDA LOS DATOS DEL IMPUT NICK NAME DE SIGNUP
   $nickName.on('input', function() {
     if ($nickName .val() === $nickNameLocal) {
-     console.log($nickName);
+      console.log($nickName);
     }
   });
   // CREANDO FUNCION QUE VALIDA LOS DATOS DEL IMPUT PASSWORD DE SIGNUP

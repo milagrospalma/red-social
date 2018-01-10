@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // obteniendo datos para agregar al header 
+  // obteniendo datos para agregar al header
   var $nickName = localStorage.getItem('nick-name');
   $('div.div-img>p').append($nickName);
   // var $frase = localStorage.getItem('img-frase');
@@ -10,12 +10,12 @@ $(document).ready(function() {
   var $iconComment = $('.icon-comment');
   // evento para el icono 'comment'
   $iconComment.on('click', function() {
-    $('.section-modal').removeAttr('hidden');    
+    $('.section-modal').removeAttr('hidden');
     var $input = $('div.add-comment>input');
     // evento para el input
     $input.on('keyup', function(event) {
       var $inputValue = $('div.add-comment>input').val();
-      $('.button-modal').removeAttr('disabled'); 
+      $('.button-modal').removeAttr('disabled');
       // condicion que deshabilita el button del modal
       if ($inputValue === '' || event.keyCode === 69 && $inputValue.lenght <= 1) {
         $('.button-modal').attr('disabled', 'disabled');
@@ -32,7 +32,7 @@ $(document).ready(function() {
   });
   // funcionalidad para el modal 'publicar'
   var $iconAdd = $('div.card-image>a');
-  // evento para el icono add(+) 
+  // evento para el icono add(+)
   $iconAdd.on('click', function() {
     $('.section-modal2').removeAttr('hidden');
     // evento para el icono 'close'
@@ -50,25 +50,25 @@ $(document).ready(function() {
       // evento para los inputs del modal
       $inputText.on('keyup', function(event) {
         var $inputTextValue = $inputText.val();
-        $('.button-modal').removeAttr('disabled');  
+        $('.button-modal').removeAttr('disabled');
         if ($inputTextValue === '' || event.keyCode === 69 && $inputTextValue.lenght <= 1) {
           $('.button-modal').attr('disabled', 'disabled');
         }
       });
       $inputLink.on('click', function() {
         var $inputLinkValue = $inputLink.val();
-        $('.button-modal').removeAttr('disabled');  
+        $('.button-modal').removeAttr('disabled');
       });
       $inputTitle.on('keyup', function(event) {
         var $inputTitleValue = $inputTitle.val();
-        $('.button-modal').removeAttr('disabled');  
+        $('.button-modal').removeAttr('disabled');
         if ($inputTitleValue === '' || event.keyCode === 69 && $inputTitleValue.lenght <= 1) {
           $('.button-modal').attr('disabled', 'disabled');
         }
       });
       $inputVideo.on('click', function() {
         var $inputVideoValue = $inputVideo.val();
-        $('.button-modal').removeAttr('disabled');  
+        $('.button-modal').removeAttr('disabled');
       });
       // evento del button del modal: agregando elementos al html
       $('.button-modal').on('click', function() {

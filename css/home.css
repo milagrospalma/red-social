@@ -41,9 +41,10 @@ header{
   text-align: center;
 }
 
-.frase{
-  width: ;
-  height: ;
+.nickName-style{
+  font-family: 'Fascinate', cursive;
+  color : #000000;
+  font-size: 20px;
 }
 
 .photo-perfil{
