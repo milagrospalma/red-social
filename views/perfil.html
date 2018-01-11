@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../css/perfil.css">
   </head>
-  <body >
+  <body>
     <nav class="nav-extended">
       <div class="nav-wrapper">
         <div class="container">
@@ -26,7 +26,8 @@
              <p class="frase"><em>"No dejes pasar ni un solo día sin que tenga impacto en el mundo que te rodea. Lo que haces marca la diferencia, y tienes que decidir qué tipo de diferencia es la que quieres hacer"</em></p>
              <hr>
              <div class="btn-follow">
-               <a class="waves-effect waves-light btn follow"><i class="material-icons right"></i>Seguir</a>
+               <!-- Se puede agregar otra clase al botón cuando éste es seleccionado -->
+               <a class="waves-effect waves-light btn follow">Seguir</a>
              </div>
             </div>
           </div>
@@ -36,14 +37,15 @@
     <main>
       <section>
         <ul id="tabs-swipe-demo" class="tabs">
-          <li class="tab col s3"><a href="#test-swipe-1"><strong>Publicaciones</strong></a></li>
-          <li class="tab col s3"><a class="active" href="#test-swipe-2">Seguidores</a></li>
+          <!-- Una vez en el perfil debería visualizarse por defecto la sección de publicaciones -->
+          <li class="tab col s3"><a class="active" href="#test-swipe-1"><strong>Publicaciones</strong></a></li>
+          <li class="tab col s3"><a href="#test-swipe-2">Seguidores</a></li>
         </ul>
         <!---AREA PUBLICACIONES-->
         <div id="test-swipe-1" class="col s12" id="post">
           <div class="posting">
-            <textarea type="text" name="insert-links" id="insert-text" placeholder="Comparte experiencias,historias,pensamientos..."></textarea>
-            <hr><!---separación entre texto y botón-->
+            <textarea type="text" name="insert-links" id="insert-text" class="bg-white" placeholder="Comparte experiencias,historias,pensamientos..."></textarea>
+            <hr>
             <!---CREANDO BOTON PARA PUBLICAR-->
             <div class="button-characters">
               <button class="btn waves-effect waves-light btn-posting" type="submit" name="action" disabled>Publicar

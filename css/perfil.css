@@ -12,11 +12,12 @@ nav{
   text-align: right;
 }
 .follow{
-  background: #ff4d4d;
+  background-color: #ff4d4d;
   text-align: center;
 }
 .frase{
-  line-height: 20px;
+  /* Se deben usar otras unidades de medida que no sean pixeles*/
+  line-height: 1.5em;
 }
 .container-flex-vertical{
   margin-top: 15px;
@@ -31,6 +32,8 @@ nav{
   font-size: 25px;
 }
 main{
+  /*Para evitar el scroll, el background debería ocupar toda la página
+  el contenido del usuario debería sobreponerse*/
   background-image: url(../assets/images/background.png);
   height:100vh;
 }
@@ -44,4 +47,10 @@ main{
   color: #ffff;
   background:#40E0D0 ;
   margin-bottom: 10px;
+}
+
+/* El placeholder del textarea se pierde con la imagen de fondo,
+por se agrega una clase para que el textarea tenga fondo blanco */
+.bg-white {
+  background-color: #FFFFFF;
 }
