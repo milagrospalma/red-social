@@ -4,10 +4,18 @@ $(document).ready(function() {
   var $password = $('#password');
   var $btnFrase = $('#btn-frase');
   var $btnRegistro = $('.button-registro');
+  // CREANDO FUNCION QUE VALIDA LOS DATOS DEL IMPUT NICK NAME
+  $nickName.on('input', function() {
+    if ($nickName .val().length >= 4 && $nickName .val().length <= 15) {
+     $btnFrase.attr('disabled', false);
+    } else {
+      $btnFrase.attr('disabled', true);
+    }
+  });
   // CREANDO FUNCION QUE VALIDA LOS DATOS DEL IMPUT PASSWORD
   $password.on('input', function() {
-    if ($password .val().length >= 6) {
-      $btnFrase.attr('disabled', false);
+    if ($password .val().length >= 6 && $password .val().length <= 15) {
+     $btnFrase.attr('disabled', false);
     } else {
       $btnFrase.attr('disabled', true);
     }
