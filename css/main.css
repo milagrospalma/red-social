@@ -15,7 +15,8 @@ body{
   background-image: url(../assets/images/amigas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  /* se cambió el valor de height para que no genere scroll*/
+  height: 30vh;
 }
 .container-flex{
   display: flex;
